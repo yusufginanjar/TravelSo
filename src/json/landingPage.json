@@ -1,0 +1,39 @@
+{
+    "hero": {
+        "_id": "asd1293uasdads1",
+        "name": "Labuan Bajo",
+        "imageUrl": "/images/image-mostpicked-2.jpg",
+        "country": "Indonesia",
+        "city": "Bogor",
+        "price1": "620",
+        "unit1": "7 Days Tour on 2 persons",
+        "price2": "620",
+        "unit2": "7 Days Tour on 2 persons",
+        "currency": "$",
+        "isHotPlace": true
+    },
+    "package": {
+        "_id": "asd1293uasdads1",
+        "name": ["Bali", "Kualalumpur", "......"],
+        "duration": ["2days", "3days", "....."]
+    },
+    "hotel": {
+        "_id": "asd1293uasdads1",
+        "name": ["Bali", "Kualalumpur", "......"],
+        "startDate": "New Date()",
+        "duration": ["2days", "3days", "....."],
+        "adult": "1",
+        "child": "0",
+        "room": "1"
+    },
+    "flight": {
+        "_id": "asd1293uasdads1",
+        "from": ["Bali", "Kualalumpur", "......"],
+        "to": ["Bali", "Kualalumpur", "......"],
+        "departureDate": ["Bali", "Kualalumpur", "......"],
+        "adult": "1",
+        "child": "0",
+        "infant": "0"
+    }
+
+}
