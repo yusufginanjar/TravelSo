@@ -12,28 +12,209 @@
         "currency": "$",
         "isHotPlace": true
     },
-    "package": {
-        "_id": "asd1293uasdads1",
-        "name": ["Bali", "Kualalumpur", "......"],
-        "duration": ["2days", "3days", "....."]
+    "searchbox":{
+        "package": {
+            "_id": "asd1293uasdads1",
+            "name": ["Bali", "Kualalumpur", "Jakarta, Indonesia", "Yogyakarta, Indonesia" , "Bankok, Thailand" , "All destinations"],
+            "duration": ["2days", "3days", "4days","5days","6days","7days", "All"]
+        },
+        "hotel": {
+            "_id": "asd1293uasdads1",
+            "name": ["Bali", "Kualalumpur", "......"],
+            "startDate": "New Date()",
+            "duration": ["1 night", "2 nights", "3 nights", "4 nights", "5 nights", "6 nights", "7 nights"],
+            "adult": "1",
+            "child": "0",
+            "room": "1"
+        },
+        "flight": {
+            "_id": "asd1293uasdads1",
+            "from": ["Bali", "Kualalumpur", "......"],
+            "to": ["Bali", "Kualalumpur", "......"],
+            "departureDate": ["Bali", "Kualalumpur", "......"],
+            "adult": "1",
+            "child": "0",
+            "infant": "0"
+        }
     },
-    "hotel": {
+    "mostPicked": [
+    {
         "_id": "asd1293uasdads1",
-        "name": ["Bali", "Kualalumpur", "......"],
-        "startDate": "New Date()",
-        "duration": ["2days", "3days", "....."],
-        "adult": "1",
-        "child": "0",
-        "room": "1"
+        "name": "Bali",
+        "imageUrl": "/assets/images/background1.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": false
     },
-    "flight": {
+    {
         "_id": "asd1293uasdads1",
-        "from": ["Bali", "Kualalumpur", "......"],
-        "to": ["Bali", "Kualalumpur", "......"],
-        "departureDate": ["Bali", "Kualalumpur", "......"],
-        "adult": "1",
-        "child": "0",
-        "infant": "0"
+        "name": "Yogyakarta",
+        "imageUrl": "/images/bali.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": true
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Labuan Bajo",
+        "imageUrl": "/images/bali.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": true
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Malang",
+        "imageUrl": "/images/bali.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": true
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Yogyakarta",
+        "imageUrl": "/images/bali.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": true
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Labuan Bajo",
+        "imageUrl": "/images/bali.png",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et",
+        "price": "30",
+        "unit": "day",
+        "currency": "$",
+        "isSale": true
+    }
+    ],
+    "blog": [
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Tourism in cox's bazar",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "author": "Admin",
+        "date": "New Date()",
+        "imageUrl": "/images/bali.png",
+        "number" : "30"
+    }, 
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Tourism in cox's bazar",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "author": "Admin",
+        "date": "New Date()",
+        "imageUrl": "/images/bali.png",
+        "number" : "30"
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "name": "Tourism in cox's bazar",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "author": "Admin",
+        "date": "New Date()",
+        "imageUrl": "/images/bali.png",
+        "number" : "30"
+    } 
+    ],
+    "testimony": [
+        {
+            "_id": "asd1293uasdads1",
+            "imageUrl": "/images/testimonial-landingpages.jpg",
+            "name": "Chris Evan",
+            "rate": 4.55,
+            "content": "What a great trip with my family and I should try again next time soon ...",
+            "occupation": "Client"
+        },
+        {
+            "_id": "asd1293uasdads1",
+            "imageUrl": "/images/testimonial-landingpages.jpg",
+            "name": "Chris Evan",
+            "rate": 4.55,
+            "content": "What a great trip with my family and I should try again next time soon ...",
+            "occupation": "Client"
+        },
+        {
+            "_id": "asd1293uasdads1",
+            "imageUrl": "/images/testimonial-landingpages.jpg",
+            "name": "Chris Evan",
+            "rate": 4.55,
+            "content": "What a great trip with my family and I should try again next time soon ...",
+            "occupation": "Client"
+        }
+    ],
+    "video":
+    {
+        "_id": "asd1293uasdads1",
+        "videoUrl": "https://www.youtube.com/embed/XgZseCqHOQI"
+    },
+    "team":[
+    {
+        "_id": "asd1293uasdads1",
+        "imageUrl": "/images/testimonial-landingpages.jpg",
+        "name": "Chris Evan",
+        "occupation": "Marketer",
+        "email": "justin.conner@travso.com",
+        "phone": "617-623-1848"
+
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "imageUrl": "/images/testimonial-landingpages.jpg",
+        "name": "Chris Evan",
+        "occupation": "Marketer",
+        "email": "justin.conner@travso.com",
+        "phone": "617-623-1848"
+
+    },
+    {
+        "_id": "asd1293uasdads1",
+        "imageUrl": "/images/testimonial-landingpages.jpg",
+        "name": "Chris Evan",
+        "occupation": "Marketer",
+        "email": "justin.conner@travso.com",
+        "phone": "617-623-1848"
+
+    }
+    ],
+    "footer":{
+        "_id": "asd1293uasdads1",
+        "brand": "TRAVSO",
+        "description" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "address": "",
+        "phone": "",
+        "email": "",
+        "iconLink" : {
+            "youtube": "",
+            "instagram": "",
+            "twitter": "",
+            "facebook": ""
+        },
+        "link": {
+            "link1" : "Home",
+            "link2" : "Hot Places",
+            "link3" : "Blogs",
+            "link4" : "Contact"
+        },
+        "instagram": {
+            "photo1": "",
+            "photo2": "",
+            "photo3": "",
+            "photo4": "",
+            "photo5": "",
+            "photo6": ""
+        }
     }
 
 }

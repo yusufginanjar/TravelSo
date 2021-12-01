@@ -46,6 +46,13 @@
 @import "print";
 @import "container-grid";
 
+:root {
+    --main-color: #ff9a76;
+    --secondary-color: #679b9b;
+    --secondary-color-2: #ffeadb;
+    --bg-color-1: #b4a378;
+  }
+
 
 header {
     // border-bottom: 1px solid $gray-200;
@@ -85,15 +92,11 @@ header {
                     outline: none;
                     color: white;
                     border-bottom: 1px solid white;
-                    width: 200px;
+                    width: 200px;  
                 }
             }
         }
     }
-}
-
-section {
-    margin-bottom: 70px;
 }
 
 .main-menu {
@@ -102,11 +105,12 @@ section {
 }
 
 .jumbotron {
+    margin-bottom: 0;
     h1{
-        font-size: 6.5vw;
+        font-size: 75px;
     }
     .price {
-        margin-top: 5vw;
+        margin-top: 35px;
         span {
             font-size: 50%;
         }
@@ -114,7 +118,7 @@ section {
     .play {
     position: relative;
     i {
-        font-size: 5vw;
+        font-size: 36px;
         }
         a span {
             border: 1px solid rgb(207, 207, 207);
@@ -143,9 +147,232 @@ section {
       right: -2vw;
       bottom: -2vw;
     }
-  }
+}
+
+.search {
+    .container {
+        position: relative;
+        top: -100px;
+        border-radius: 5px;
+        color: var(--secondary-color);
+    }
+    .nav-tabs .nav-item {
+        color: var(--secondary-color);
+        background-color: var(--secondary-color-2);
+        &.active {
+            background-color: var(--secondary-color);
+            color: var(--secondary-color-2);
+          }
+    }
+    .nav-tabs .nav-link {
+        border: none;
+        border-radius: 0;
+    }
+    //i is not used
+    .input i {
+        color: var(--secondary-color);
+    }
+    select, input {
+        color: var(--secondary-color);
+    }
+    .persons-rooms .input-group {
+        max-width: 10rem;
+     }      
+}
 
 
+.recommended {
+    background-color: $secondary-2;
+    .section-title h1 {
+        color: $secondary;
+    }
+    .card {
+        .image-card {
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .card-body, .image-card {
+            position: relative;
+            min-height: 18vw;
+        }
+        .card-body {
+            .btn {
+                position: absolute;
+                bottom: 1.5vw;
+                border-radius: 2vw;
+                padding-left: 2vw;
+                padding-right: 2vw;
+                min-height: 20px;
+            }
+        }
+        .image-card{
+            .btn {
+                position: absolute;
+                top: 0.5vw;
+                background-color: $secondary;
+            }
+            .overlay {
+                position: absolute;
+                background-color: #123123;
+                opacity: 0;
+                transition: 0.5s ease-in;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                a {
+                    top: 40%;
+                  }
+            }
+            h5 {
+                position: absolute;
+                bottom: 1.2vw;
+                font-size: 1.2vw;
+            }
+        }
+        .image-card:hover .overlay {
+            opacity: 0.5;
+        }
+        .card-body{
+            h4, p {
+                color: $secondary;
+            }
+            h4 {
+                font-size: 2vw;
+                font-weight: bold;
+                span {
+                    position: relative;
+                    top: -0.9vw;
+                    font-size: 0.7vw;
+                }
+            }
+            p {
+                font-size: 0.8vw;
+              }
+        }
+          
+    }
+}
+
+.blog {
+    background-color: #eaeaea;
+    .title{
+        h5, h2 {
+            color: $secondary;
+        }
+    }
+    .card {
+        height: auto;
+        h4, p, i{
+            color: $secondary;
+        }
+        .number {
+            background-color: $secondary;
+            position: absolute;
+            right: -1vw;
+            top: -1vw;
+            padding-top: 1.2vw;
+            width: 5vw;
+            height: 5vw;
+            border-radius: 50%;
+            text-align: center;
+            h2 {
+                font-size: 1.8vw;
+            }
+        }
+        .image-card {
+            overflow: hidden;
+            text-align: center;
+        }
+    } 
+}
+
+
+.testimony{
+    h1 {
+        color: $secondary;
+    }
+    .card{
+        border: 1px solid rgb(207, 207, 207);
+        h5, p {
+            color: $secondary;
+            margin-bottom: 0.3vw;
+        }
+        i {
+            color: $primary;
+            margin-bottom: 0.3vw;
+        }
+        .card-img {
+            border-radius: 50%;
+        }
+        .card-body{
+            h5 {
+                font-size: 1.5vw;
+            }
+            p, i {
+                font-size: 0.8vw;
+            }
+        }
+
+    }
+}
+
+.video {
+    background-color: #1b1b1b;
+}
+
+
+.team {
+    h1 {
+        color: var(--secondary-color);
+    }
+    .card {
+        max-width: 20rem;
+        .biodata {
+            position: absolute;
+            bottom: 0;
+            background-color: #524848;
+            opacity: 0;
+            transition: 0.5s;
+        }
+    }
+    .card:hover .biodata {
+        opacity: 0.7;
+    }
+
+}
+
+
+footer {
+    background-color: #121212;
+    i {
+        position: relative;
+        font-size: 2vw;
+        top: 0;
+        transition: 0.3s;
+    }
+    i:hover {
+        top: -0.2vw;
+    }
+    ul li {
+        margin-top: 0.5vw;
+        a {
+            font-size: 1vw;
+            color: white;
+        }
+        span {
+        margin-left: -2.1vw;
+            i {
+                font-size: 1.4vw;
+            }
+        }     
+    }
+    .quick li {
+        margin-left: -2.1vw;
+    }
+      
+      
+}
 
 
 

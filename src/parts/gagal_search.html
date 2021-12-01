@@ -1,0 +1,108 @@
+<div className="tab-pane fade show active" id="nav-tour" role="tabpanel" aria-labelledby="nav-tour-tab">
+{/* <!-- Destination --> */}
+<form action="">  
+<div className="form-row mt-4 pt-4">
+<div className="form-group input col-lg-4 ">
+<div className="">
+<label for="search-destination">
+<FontAwesomeIcon icon={faMapMarker} className="mr-2"/>
+ Destination</label>
+<select className="form-control" id="search-destination">
+{props.data.package.name.map((item, index) => {
+    return(
+            <option key={`package-name-${index}`}>{item}</option>
+        )
+    })
+}
+</select>
+</div>
+</div>
+
+<div className="form-group input col-lg-4 pl-4">
+<div className="px-3">
+<label for="search-duration">
+<FontAwesomeIcon icon={faCalendarCheck} className="mr-2"/>
+  Duration</label>
+<select className="form-control" id="search-duration">
+{props.data.package.duration.map((item, index) => {
+    return(
+            <option key={`package-duration-${index}`}>{item}</option>
+        )
+    })
+}
+</select>
+</div>
+</div>
+<div className="form-group col-lg-4 d-flex justify-content-left align-items-end px-3">
+<button type="submit" className="btn btn-secondary">Search
+<FontAwesomeIcon icon={faSearch} className="ml-2"/>
+</button>
+</div>
+</div>
+</form>
+{/* <!-- end of Destination --> */}
+</div>
+<div className="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+{/* <!-- item C --> */}
+<form action="">
+<div className="form-row mt-4 pt-4">
+<div className="form-group input col-lg-4 ">
+<div className="">
+<label for="search-destination"><i className="fas fa-map-marker-alt mr-2"></i>Destination</label>
+<select className="form-control" id="search-destination">
+<option>Bali, Indonesia</option>
+<option>Kuala Lumpur, Malaysia</option>
+<option>Jakarta, Indonesia</option>
+<option>Yogyakarta, Indonesia</option>
+<option>Bankok, Thailand</option>
+<option>All destinations</option>
+{props.data.hotel.name.map((item, index) => {
+    return(
+            <option key={`hotel-name-${index}`}>{item}</option>
+        )
+    })
+}
+</select>
+</div>
+</div>
+<div className="form-group input col-lg-4 pl-4">
+<div className="px-3">
+<label for="check-in"><i className="far fa-calendar-alt"></i> Check In</label>
+<input type="date" className="form-control" name="hotel-start" value="2020-09-29" min="2020-01-01" max="2022-12-31"/>
+</div>
+</div>
+<div className="form-group input col-lg-4 pl-4">
+<div className="px-3">
+<label for="search-duration"><i className="fas fa-moon"></i> Duration</label>
+<select className="form-control" id="search-duration">
+{props.data.hotel.duration.map((item, index) => {
+    return(
+            <option key={`hotel-duration-${index}`}>{item}</option>
+        )
+    })
+}
+</select>
+</div>
+</div>
+</div>
+<div className="form-row persons-rooms mt-4 pt-4">
+<div className="form-group input col-lg-2 ">
+<label for="persons-adult"><i className="fas fa-male"></i> Adult</label>
+<input type="number" value="1" min="1"  max="100" step="1" className="form-control" id="persons-adult"/>
+</div>
+<div className="form-group input col-lg-2 ">
+<label for="persons-child"><i className="fas fa-baby"></i> Child</label>
+<input type="number" value="0" min="0"  max="100" step="1" className="form-control" id="persons-child"/>
+</div>
+<div className="form-group input col-lg-2 ">
+<label for="persons-room"><i className="fas fa-door-open"></i> room</label>
+<input type="number" value="1" min="1"  max="100" step="1" className="form-control" id="persons-child"/>
+</div>
+<div className="form-group col-lg-4 d-flex justify-content-left align-items-end px-4">
+<button type="submit" className="btn btn-secondary ml-3">Search Hotel<i className="fas fa-search ml-2"></i></button>
+</div>
+</div>
+</form>
+{/* <!-- end of C --> */}
+
+</div>
